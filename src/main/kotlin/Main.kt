@@ -75,4 +75,13 @@ fun stringContains(str : String){
     //    - contains the letter C, print the string and say it contains C.
     //    - is empty, inform the user that it is empty.
     //    - otherwise print the string and say it doesn't contain A, B or C.
+
+    when {
+        str.contains("a" ) -> "$str contains A"
+        str.contains("b" ) -> "$str contains B"
+        str.contains("c" ) -> "$str contains C"
+        str.isEmpty() -> "$str is empty"
+        else -> "$str does not contain A, B, or C"
+
+    }
 }
